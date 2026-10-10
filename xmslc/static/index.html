@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>XMSLC Workbench - Explainable Multi-Stage Log Correlation</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2l11 4v9c0 7-5 12-11 15C10 27 5 22 5 15V6z' fill='%232dd4bf'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2dd4bf"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs><path d="M16 2l11 4v9c0 7-5 12-11 15C10 27 5 22 5 15V6z" fill="url(#g)" opacity=".18" stroke="url(#g)" stroke-width="1.6"/><path d="M10 15l4 4 8-9" fill="none" stroke="#2dd4bf" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div><b>XMSLC Workbench</b><span>Explainable Multi-Stage Log Correlation &middot; MSc Cybersecurity &middot; CST4990</span></div>
+  </div>
+  <div class="top-right">
+    <span class="badge safe">Synthetic data only &middot; offline &middot; no real systems</span>
+    <span class="badge" id="runBadge">No run yet</span>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="side" id="nav">
+    <h5>Workflow</h5>
+    <button class="nav active" data-tab="config"><i>01</i>Configure &amp; Run</button>
+    <button class="nav" data-tab="summary"><i>02</i>Executive Summary<span class="dot"></span></button>
+    <button class="nav" data-tab="incidents"><i>03</i>Incident Investigation<span class="dot"></span></button>
+    <button class="nav" data-tab="compare"><i>04</i>Detector Comparison<span class="dot"></span></button>
+    <button class="nav" data-tab="logs"><i>05</i>Log Explorer<span class="dot"></span></button>
+    <h5>Research</h5>
+    <button class="nav" data-tab="experiments"><i>06</i>Statistical Experiments</button>
+    <button class="nav" data-tab="custom"><i>07</i>Analyse Your Own Logs</button>
+    <button class="nav" data-tab="method"><i>08</i>Methodology &amp; Criteria</button>
+  </nav>
+
+  <main>
+    <section class="tab active" id="tab-config"></section>
+    <section class="tab" id="tab-summary"></section>
+    <section class="tab" id="tab-incidents"></section>
+    <section class="tab" id="tab-compare"></section>
+    <section class="tab" id="tab-logs"></section>
+    <section class="tab" id="tab-experiments"></section>
+    <section class="tab" id="tab-custom"></section>
+    <section class="tab" id="tab-method"></section>
+    <footer>
+      Bazil Rehman &middot; M01098109 &middot; CST4990 Postgraduate Individual Research Project &middot; Middlesex University Dubai &middot; Supervisor: Prof. Fehmida Hussain<br>
+      <em>Design and Evaluation of an Explainable Multi-Stage Log-Correlation Framework for Detecting Simulated Account Takeover Using Synthetic Security Logs.</em>
+      Research prototype - not a production SIEM.
+    </footer>
+  </main>
+</div>
+
+<aside class="drawer" id="drawer"></aside>
+<div class="toast" id="toast"></div>
+<script src="/static/charts.js"></script>
+<script src="/static/app.js"></script>
+<script src="/static/app2.js"></script>
+</body>
+</html>
